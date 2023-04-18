@@ -3,13 +3,21 @@
 # Week 1: Basics and Data Structures
 
 # Challenge 1: Write a program that takes two numbers as input and prints their sum.
-def getSum(num1, num2):
+def get_sum(num1, num2):
   print(num1 + num2)
 # Challenge 2: Write a program that takes a string input and reverses it.
-def reverseString(string):
+def reverse_string(string):
   print(string[::-1])
 # Challenge 3: Write a program that checks if a given number is prime.
-
+def is_prime(number):
+    if number <= 1:
+        return False
+    
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
+            return False
+    
+    return True
 # Challenge 4: Write a program that takes a list of numbers and finds the maximum and minimum elements.
 
 # Challenge 5: Write a program that removes duplicates from a given list.
