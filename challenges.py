@@ -21,10 +21,10 @@ def is_prime(number):
 # Challenge 4: Write a program that takes a list of numbers and finds the maximum and minimum elements.
 def find_max_min(num_list):
   num_list.sort()
-  x = num_list[0]
-  y = num_list[-1]
-  print(f"The max is {y}. The min is {x}")
+  print(f"The max is {num_list[-1]}. The min is {num_list[0]}")
 # Challenge 5: Write a program that removes duplicates from a given list.
+def remove_duplicates(given_list):
+   print(set(given_list))
 
 
 
