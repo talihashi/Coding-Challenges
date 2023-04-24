@@ -16,7 +16,6 @@ def is_prime(number):
     for i in range(2, int(number**0.5) + 1):
         if number % i == 0:
             return False
-    
     return True
 # Challenge 4: Write a program that takes a list of numbers and finds the maximum and minimum elements.
 def find_max_min(num_list):
@@ -27,10 +26,14 @@ def remove_duplicates(given_list):
    print(set(given_list))
 
 
-
 # Week 2: Functions and Recursion
 
 # Challenge 6: Write a recursive function to calculate the factorial of a number.
+def factorial(n):
+   if (n==1 or n==0):
+      return 1
+   else:
+      return (n * factorial(n-1))
 
 # Challenge 7: Write a function that takes a list and a target number and returns the indices of two numbers in the list that sum up to the target.
 
